@@ -1,0 +1,76 @@
+@media (max-width: 950px){
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
+         
+    }
+    section{
+        display: block;
+        justify-content: center;
+        gap: none;
+        height: 100%;
+        
+    }
+   
+    aside img{
+        width: 350px;
+        margin-top: 1em;
+    }
+    main{
+        margin-bottom: 1em;
+
+    }
+    main h1{
+        font-size: 50px;
+
+    }
+    main h3{
+        font-size: 30px;
+    
+    }
+
+    main a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    main a:hover{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+    @keyframes cofe{
+        10% {
+            transform: rotate(0deg) translate(0px, 0vh);
+          }
+          50% {
+            transform: rotate(0deg) translate(0vh, 0px);
+          }
+          25%,
+          75% {
+            transform: rotate(0deg) translate(0px, 0vh);
+     
+    
+    }
+    }
+   
+}
+@media (max-width: 550px){
+
+    aside img{
+        width: 250px;
+        margin-top: none;
+    }
+    main h3{
+        display: none;
+    }
+    main p {
+        font-size: 14px;
+    }
+
+}

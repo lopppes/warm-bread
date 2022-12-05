@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #531000 50%, #d49876 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+section{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+
+}
+aside img{
+   
+    animation: cofe 2.7s ease-in-out infinite;
+
+    
+}
+@keyframes cofe{
+    10% {
+        transform: rotate(3deg) translate(-50px, 2vh);
+      }
+      50% {
+        transform: rotate(-4deg) translate(-2vh, 50px);
+      }
+      25%,
+      75% {
+        transform: rotate(6deg) translate(50px, 2vh);
+ 
+
+}
+}
+
+main h1{
+    color:#592c00;
+    font-weight: 700;
+    font-size: 80px;
+    animation: slay 3s infinite ease-in-out;
+
+}
+
+@keyframes slay{
+    0%{
+        color: #ffe7ce;
+    }
+    50%{
+        color: #75410d;
+    }
+    70%{
+        color: #592c00;
+    }
+    100%{
+        color: #ffe7ce;
+    }
+}
+main h3, p{
+    animation: letras 3s infinite ease-in-out;
+    font-size: 20px;
+}
+@keyframes letras{
+    0%{
+        color: #ffe7ce;
+    }
+    50%{
+        color: #c8aa8d;
+    }
+    70%{
+        color: #bd956e;
+    }
+    100%{
+        color: #ffe7ce;
+    }
+}
+main p {
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
+main a{
+    color: #ffe7ce;
+    border: 2px solid #592c00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius: 5px;
+    animation:  borda 1s infinite ease-in-out;
+    font-weight: 700;
+
+
+}
+
+@keyframes borda{
+    0%{
+        border: 2px solid #592c00;
+    }
+    50%{
+        border:2px solid #814d18;
+    }
+    100%{
+        border:2px solid #592c00;
+
+    }
+}
+
+main a:hover{
+    background-color: #75410d;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 122px;
+    padding-right: 122px;
+    animation: none;
+
+}
+
